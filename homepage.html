@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homepage</title>
+    <script src="myScripts.js"></script>
+    <link href="myStyles.css" rel="stylesheet" type="text/css">
+</head>
+<body oncontextmenu="return false" onmousedown="ClickDisabled(event)">
+    <header>
+        <div class="logoIMG">
+            <h1>The bookstore</h1>
+            <img src="images/logo.jpg" alt="logo" width="220" height="120">
+        </div>
+        <div class="mainmenu">
+            <ul class="menu">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="Books.html">All Books</a></li>
+                <li><a href="conatct.html">contact</a></li>
+                <li><a href="AboutUs.html">About the entity</a></li>
+                <li><a href="">Cart</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </div>
+        <div class="search-container">
+            <form class="searchbar">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </header>
+
+    <!--sub menu-->
+    <nav>
+        <h4>categories</h4>
+        <figure class="categories">
+            <a href="">
+            <img src="images/cube.jpg" alt="Arts">
+            </a>
+            <figcaption>Art&Architecture</figcaption>
+        </figure>
+        <figure class="categories">
+            <a href="">
+                <img src="images/printing.jpg" alt="Business&investing">
+            </a>
+            <figcaption>Business&Investing</figcaption>
+        </figure>
+        <figure class="categories">
+        <a href="">
+            <img src="images/cube.jpg" alt="Children's book">
+        </a>
+        <figcaption>Children's book</figcaption>
+        </figure>
+        <figure class="categories">
+            <a href="">
+                <img src="images/cube.jpg" alt="Comics">
+            </a>
+            <figcaption>Comics&Graphic Books</figcaption>
+        </figure>
+        <figure class="categories">
+            <a href="">
+                <img src="images/printing.jpg" alt="History">
+            </a>
+            <figcaption>Fiction</figcaption>
+        </figure>
+        <figure class="categories">
+            <a href="">
+                <img src="images/cube.jpg" alt="Fiction">
+            </a>
+            <figcaption>History</figcaption>
+        </figure>
+        <figure class="categories">
+            <a href="">
+                <img src="images/printing.jpg" alt="Mystery">
+            </a>
+            <figcaption>Mystery&Suspense</figcaption>
+        </figure>
+        <figure class="categories">
+            <a href="">
+                <img src="images/printing.jpg" alt="Textbooks">
+            </a>
+            <figcaption>Textbooks</figcaption>
+        </figure>
+    </nav>
+
+    <!--image slider-->
+    <div class="imageSlider">
+
+        <div class="slides fade">
+            <img src="images/map.jpg" alt="img1" style="width:100%">
+            <div class="text">What's trending?</div>
+        </div>
+
+        <div class="slides fade" id="a">
+            <img src="images/cube.jpg" alt="img2" style="width:100%">
+            <div class="text">Best books of the month</div>
+        </div>
+
+        <div class="slides fade" id="b">
+            <img src="images/stone.jpg" alt="img3"  style="width:100%">
+            <div class="text">Spring Book-Club picks</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!--scroll bar-->
+    <h3>Best sellers</h3>
+    <div class="scrollbar">
+
+        <figure class="gallery">
+            <a href="">
+                <img src="images/cube.jpg" alt="book1">
+            </a>
+            <figcaption>Book1</figcaption>
+        </figure>
+        <figure class="gallery">
+            <a href="">
+                <img src="images/vintage.jpg" alt="book2">
+            </a>
+            <figcaption>Book2</figcaption>
+        </figure>
+        <figure class="gallery">
+            <a href="">
+                <img src="images/printing.jpg" alt="book3">
+            </a>
+            <figcaption>Book3</figcaption>
+        </figure>
+        <figure class="gallery">
+            <a href="">
+                <img src="images/map.jpg" alt="book4">
+            </a>
+            <figcaption>Book4</figcaption>
+        </figure>
+        <figure class="gallery">
+            <a href="">
+                <img src="images/cube.jpg" alt="book5">
+            </a>
+            <figcaption>Book5</figcaption>
+        </figure>
+        <figure class="gallery">
+            <a href="">
+                <img src="images/vintage.jpg" alt="book6">
+            </a>
+            <figcaption>Book6</figcaption>
+        </figure>
+        <figure class="gallery">
+            <a href="">
+                <img src="images/printing.jpg" alt="book7">
+            </a>
+            <figcaption>Book7</figcaption>
+        </figure>
+        <figure class="gallery">
+            <a href="">
+                <img src="images/map.jpg" alt="book8">
+            </a>
+            <figcaption>Book8</figcaption>
+        </figure>
+    </div>
+
+    <h3>Most wished for</h3>
+    <div class="scrollbar">
+
+        <figure class="gallery">
+            <a href="">
+                <img src="images/cube.jpg" alt="book9">
+            </a>
+            <figcaption>Book9</figcaption>
+        </figure>
+        <figure class="gallery">
+            <a href="">
+                <img src="images/vintage.jpg" alt="book10">
+            </a>
+            <figcaption>Book10</figcaption>
+        </figure>
+        <figure class="gallery">
+            <a href="">
+                <img src="images/printing.jpg" alt="book11">
+            </a>
+            <figcaption>Book11</figcaption>
+        </figure>
+        <figure class="gallery">
+            <a href="">
+                <img src="images/map.jpg" alt="book12">
+            </a>
+            <figcaption>Book12</figcaption>
+        </figure>
+        <figure class="gallery">
+            <a href="">
+                <img src="images/cube.jpg" alt="book13">
+            </a>
+            <figcaption>Book13</figcaption>
+        </figure>
+        <figure class="gallery">
+            <a href="">
+                <img src="images/vintage.jpg" alt="book14">
+            </a>
+            <figcaption>Book14</figcaption>
+        </figure>
+        <figure class="gallery">
+            <a href="">
+                <img src="images/printing.jpg" alt="book15">
+            </a>
+            <figcaption>Book15</figcaption>
+        </figure>
+        <figure class="gallery">
+            <a href="">
+                <img src="images/map.jpg" alt="book16">
+            </a>
+            <figcaption>Book16</figcaption>
+        </figure>
+    </div>
+
+    <section id="summary">
+        <h4>
+            About The Bookstore
+        </h4>
+        <p>
+            The bookstore is a large online book sellers. We provide the best online shopping experience. Everyone can find what they need in the Bookstore.
+    </section>
+
+    <footer>
+        <p>© Website developed by YUTAO XU></p>
+    </footer>
+</body>
+</html>
